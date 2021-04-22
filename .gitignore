@@ -1,0 +1,126 @@
+# =============================================================================
+# IDE, Web Server and OS files
+# =============================================================================
+
+# ---------------
+# File-based
+# ---------------
+*.iws
+*~
+.*.swp
+.tags
+.quarantine
+
+# ---------------
+# Web Server
+# ---------------
+.htaccess
+web.config
+
+# ---------------
+# MS Windows
+# ---------------
+*.tmb
+thumbs.db
+Thumbs.db
+
+# ---------------
+# Mac OS
+# ---------------
+.DS_Store
+
+# ---------------
+# IntelliJ IDEA
+# ---------------
+/out/
+.idea/
+.idea_modules/
+
+# ---------------
+# Sublime
+# ---------------
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+/tests/tests/
+/tests/results/
+
+# ---------------
+# Crashlytics plugin (for Android Studio and IntelliJ)
+# ---------------
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+
+# ---------------
+# NetBeans
+# ---------------
+/nbproject/
+
+# ---------------
+# Dreamweaver
+# ---------------
+/dwccache
+
+# =============================================================================
+# Public and Development
+# =============================================================================
+
+# ---------------
+# Project
+# ---------------
+phpinfo.php
+
+# ---
+# Ignore under migration directory, except the ones ending with the term "-deploy".
+# ---
+migration/*
+!migration/*-deploy
+
+# ---------------
+# JIRA plugin
+# ---------------
+atlassian-ide-plugin.xml
+
+# ---------------
+# NodeJS Related
+# ---------------
+/node_modules
+Gruntfile.js
+gruntfile.js
+
+# ---------------
+# Code-Igniter
+# ---------------
+*/config/development
+*/logs/log-*.php
+!*/logs/index.html
+*/cache/*
+!*/cache/index.html
+!*/cache/.htaccess
+
+user_guide_src/build/*
+user_guide_src/cilexer/build/*
+user_guide_src/cilexer/dist/*
+user_guide_src/cilexer/pycilexer.egg-info/*
+
+# Code-Igniter 3
+application/config/database.php
+application/logs/*
+!application/logs/index.html
+!application/logs/.htaccess
+
+# ---------------
+# Logs
+# ---------------
+log/
+*.log
+
+# ---------------
+# Composer
+# ---------------
+/vendor/
+/composer.lock
