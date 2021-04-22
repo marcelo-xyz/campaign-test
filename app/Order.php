@@ -3,6 +3,8 @@ declare(strict_types=1);
 /**
  * Web app file for handling made up basket routines of Acme Widget Co.
  *
+ * For the sake of brevity of this application/test, a class Customer, for instance, has not been created.
+ *
  * @author     marcelo.xyz
  * @category   Server-Side
  * @package    MVC-SiteFile
@@ -38,8 +40,6 @@ final class Order{
 
   /**
    * Order constructor.
-   *
-   * For the sake of brevity of this application/test, a class Customer has not been created.
    *
    * @throws \Throwable
    * @since 1.0.0
