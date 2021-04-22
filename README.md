@@ -12,9 +12,18 @@ They are also experimenting with special offers.
 
 The initial offer will be “buy one red widget, get the second half price”.
 
+##### Products
+
+```
+Product       Code    Price
+Red Widget    R01     $32.95
+Green Widget  G01     $24.95
+Blue Widget   B01     $7.95
+```
+
 ## How it works
 
-You will find a class at [**app/Order.php.js**](app/Order.php)
+You will find a class at [**app/Order.php**](app/Order.php)
 
 Upon instantiation of the class `Order` you can add items (`OrderItem`) via method `Order::addItem(<item_code>, <quantity to add>)`.
 
