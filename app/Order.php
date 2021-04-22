@@ -27,8 +27,8 @@ final class Order{
    * @var array Delivery cost ranges per order's total.
    */
   private static $delivery_charge = [
-    'R00' => ['total'=>0.01, 'cost'=>4.95],
-    'R01' => ['total'=>50,   'cost'=>2.95],
+    'R01' => ['total'=>0.01, 'cost'=>4.95],
+    'R02' => ['total'=>50,   'cost'=>2.95],
     'R03' => ['total'=>90,   'cost'=>0],
   ];
 
