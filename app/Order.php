@@ -87,19 +87,16 @@ final class Order{
 
       foreach ($this->basket as $item){
 
+        // Keep a count/list of items that has been set as having discount.
         if ($item->discountSecondUnit() != 0.00){
-
-          if (!isset($discount_count[$item->code()]))
-            $discount_count[$item->code()] = ['qty'=>0, 'item'=>$item];
-
+          if (!isset($discount_count[$item->code()])) $discount_count[$item->code()] = ['qty'=>0, 'item'=>$item];
           $discount_count[$item->code()]['qty']++ ;
         }
 
         $total += $item->price();
       }
 
-
-      // Apply discount for second units purchased of each product defined as having discount in the class OrderItem.
+      // Apply discount for second units of each product that has been set as having discount.
       foreach ($discount_count as &$discount_info){
         if ($discount_info['qty'] > 1){
           $total += round(
@@ -110,6 +107,7 @@ final class Order{
         }
       }
 
+      // Select delivery cost according to the order's total range
       foreach (self::$delivery_charge as &$range_info){
         if ($total >= $range_info['total']) $delivery_cost = $range_info['cost'];
       }
