@@ -42,6 +42,7 @@ final class Order{
    * For the sake of brevity of this application/test, a class Customer has not been created.
    *
    * @throws \Throwable
+   * @since 1.0.0
    */
   public function __construct(){
     try{
@@ -57,6 +58,7 @@ final class Order{
    * @param int $qty The quantity to add of the $item.
    *
    * @throws \Throwable
+   * @since 1.0.0
    */
   public function addItem($item_code, int $qty=1){
     try{
@@ -74,6 +76,7 @@ final class Order{
    *
    * @return float
    * @throws \Throwable
+   * @since 1.0.0
    */
   public function total() : float{
     try{
@@ -119,7 +122,7 @@ final class Order{
   }
 }
 /**
- * Shop item for sale.
+ * Shop item that can be added to {@link Order}.
  *
  * @author     marcelo.xyz
  * @category   Server-Side
@@ -139,10 +142,12 @@ class OrderItem{
   ];
   /**
    * @var string The item/product code being handled by $this.
+   * @since 1.0.0
    */
   private $sel_code = NULL;
   /**
    * @var array Reference to the item dataset being handled by $this, which is defined upon OrderItem instantiation.
+   * @since 1.0.0
    */
   private $selected = NULL;
 
