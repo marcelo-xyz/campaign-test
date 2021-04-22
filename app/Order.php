@@ -25,6 +25,7 @@ namespace App\AcmeWidget;
 final class Order{
   /**
    * @var array Delivery cost ranges per order's total.
+   * @since 1.0.0
    */
   private static $delivery_charge = [
     'R01' => ['total'=>0.01, 'cost'=>4.95],
