@@ -61,7 +61,7 @@ final class Order{
    * @throws \Throwable
    * @since 1.0.0
    */
-  public function addItem($item_code, int $qty=1){
+  public function addItem(string $item_code, int $qty=1){
     try{
 
       if (empty($qty) || $qty < 0) $qty = 1;
