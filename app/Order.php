@@ -82,6 +82,8 @@ final class Order{
   public function total() : float{
     try{
 
+      if (empty($this->basket)) return 0;
+
       $discount_count = [];
       $total          = 0.00;
       $delivery_cost  = 0.00;
